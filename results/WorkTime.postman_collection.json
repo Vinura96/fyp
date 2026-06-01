@@ -1,0 +1,716 @@
+{
+	"info": {
+		"_postman_id": "afa34c2b-b080-4379-bf3b-d6698cd81013",
+		"name": "WorkTime",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "App",
+					"item": [
+						{
+							"name": "CreateAccount",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"route\" : \"createUserAccount\",\n    \"params\" : {\n        \"name\" : \"adasd\",\n        \"email\" : \"test@work.com\",\n        \"password\" : \"abc123\",\n        \"company_code\" : \"comp1\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://dev.creativewebshq.com/worktime/api/main.php",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"creativewebshq",
+										"com"
+									],
+									"path": [
+										"worktime",
+										"api",
+										"main.php"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Web",
+					"item": [
+						{
+							"name": "CreateCompanyAccount",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"route\" : \"createCompanyAccount\",\n    \"params\" : {\n        \"name\" : \"adasds\",\n        \"email\" : \"testa@work.com\",\n        \"password\" : \"abc123\",\n        \"company_code\" : \"comp1\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://dev.creativewebshq.com/worktime/api/main.php",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"creativewebshq",
+										"com"
+									],
+									"path": [
+										"worktime",
+										"api",
+										"main.php"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "generateToken",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"route\" : \"generateToken\",\n    \"params\" : {\n        \"email\" : \"testa@work.com\",\n        \"password\" : \"abc123\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dev.creativewebshq.com/worktime/api/main.php",
+							"protocol": "https",
+							"host": [
+								"dev",
+								"creativewebshq",
+								"com"
+							],
+							"path": [
+								"worktime",
+								"api",
+								"main.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "App",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "AddAccountDetails",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MTA2NDkxNzYsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTYxMDY1MDA3NiwidXNlcklkIjoiNiJ9.VJnWbXsv9B8ER-F0u_ezJkvXrkS_aKfy53QyypdEWk8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"route\" : \"addAccountDetails\",\n    \"params\" : {\n        \"name\" : \"adasd\",\n        \"email\" : \"test@work.com\",\n        \"country\" : \"UK\",\n        \"state\" : \"state\",\n        \"address\": \"address\",\n        \"phone\": \"123456\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://dev.creativewebshq.com/worktime/api/main.php",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"creativewebshq",
+										"com"
+									],
+									"path": [
+										"worktime",
+										"api",
+										"main.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetUserDetails",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MTA2NTEyMjYsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTYxMDY1MjEyNiwidXNlcklkIjoiNiJ9.OCoiHVcImVKeYLO0iCPdfJMg2Kt2HqkrvXRU78MaULQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"route\" : \"getUserDetails\",\n    \"params\" : {\n        \n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://dev.creativewebshq.com/worktime/api/main.php",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"creativewebshq",
+										"com"
+									],
+									"path": [
+										"worktime",
+										"api",
+										"main.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetCompanyDetails",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MTA2NTEyMjYsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTYxMDY1MjEyNiwidXNlcklkIjoiNiJ9.OCoiHVcImVKeYLO0iCPdfJMg2Kt2HqkrvXRU78MaULQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"route\" : \"getCompanyDetails\",\n    \"params\" : {\n        \n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://dev.creativewebshq.com/worktime/api/main.php",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"creativewebshq",
+										"com"
+									],
+									"path": [
+										"worktime",
+										"api",
+										"main.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ListRecords",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MTE2OTQ4NjYsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTYxMTY5NTc2NiwidXNlcklkIjoiOSJ9.0WHQbipE-rTI-2-7chVwNU7GVMhiuw_njZog5vC0EHs",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"route\" : \"listRecords\",\n    \"params\" : {\n        \"per_page\":30,\n        \"page\":1\n        \n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://dev.creativewebshq.com/worktime/api/main.php",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"creativewebshq",
+										"com"
+									],
+									"path": [
+										"worktime",
+										"api",
+										"main.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "RecordTime",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MTE2OTM2NjQsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTYxMTY5NDU2NCwidXNlcklkIjoiOSJ9.huwHypZ2mOfB94N1u-R4hew7bZRG2LgVnfDvuloLPus",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"route\" : \"record\",\n    \"params\" : {\n        \"start_time\":\"2038-01-19 03:14:07\",\n        \"end_time\":\"2038-01-19 03:14:07\",\n        \"start_latitude\":\"3\",\n        \"start_longitude\":\"3\",\n        \"end_latitude\":\"3\",\n        \"end_longitude\":\"3\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://dev.creativewebshq.com/worktime/api/main.php",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"creativewebshq",
+										"com"
+									],
+									"path": [
+										"worktime",
+										"api",
+										"main.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetTotalMinutes",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MTE4NTk2MDQsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTYxMjQ2NDQwNCwidXNlcklkIjoiOSJ9.aRIaBc4uIKVkMSqq5pSgf5cuy07PwH4dhrLB5UZjykA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"route\" : \"getTotalMinutes\",\n    \"params\" : {\n        \"days\":30\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://dev.creativewebshq.com/worktime/api/main.php",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"creativewebshq",
+										"com"
+									],
+									"path": [
+										"worktime",
+										"api",
+										"main.php"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Web",
+			"item": [
+				{
+					"name": "Company",
+					"item": [
+						{
+							"name": "AddCompanyDetails",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MTA2NTA2NzksImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTYxMDY1MTU3OSwidXNlcklkIjoiOSJ9.qRUGRU7LsGRSJD6lyQndyfpDxywfcTvwDxZFDMuSemU",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"route\" : \"addCompanyDetails\",\n    \"params\" : {\n        \"email\" : \"testcompany@work.com\",\n        \"country\" : \"UK\",\n        \"state\" : \"state\",\n        \"address\": \"address\",\n        \"phone\": \"123456\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://dev.creativewebshq.com/worktime/api/main.php",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"creativewebshq",
+										"com"
+									],
+									"path": [
+										"worktime",
+										"api",
+										"main.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetCompanyDetails",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MTA2NTEyMjYsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTYxMDY1MjEyNiwidXNlcklkIjoiNiJ9.OCoiHVcImVKeYLO0iCPdfJMg2Kt2HqkrvXRU78MaULQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"route\" : \"getCompanyDetails\",\n    \"params\" : {\n        \n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://dev.creativewebshq.com/worktime/api/main.php",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"creativewebshq",
+										"com"
+									],
+									"path": [
+										"worktime",
+										"api",
+										"main.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getDashboardStatistics",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MTE2OTc1MDIsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTYxMjMwMjMwMiwidXNlcklkIjoiOSJ9.J_TkhfGQMAWxZyMKtcFk9ukvQF4YxGFhtR_AmJDPHDQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"route\" : \"getDashboardStatistics\",\n    \"params\" : {\n        \"start\":\"2021-01-01 00:00:00\",\n        \"end\":\"2021-01-31 00:00:00\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://dev.creativewebshq.com/worktime/api/main.php",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"creativewebshq",
+										"com"
+									],
+									"path": [
+										"worktime",
+										"api",
+										"main.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ListAllCompanyRecords",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MTE2OTYwNjAsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTYxMjMwMDg2MCwidXNlcklkIjoiOSJ9.AiAYCRk0SlqKmntP5n7Ti33T1-vYqP_1EWcyZdBGD6k",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"route\" : \"listCompanyRecords\",\n    \"params\" : {\n        \"per_page\":30,\n        \"page\":1\n        \n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://dev.creativewebshq.com/worktime/api/main.php",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"creativewebshq",
+										"com"
+									],
+									"path": [
+										"worktime",
+										"api",
+										"main.php"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Worker",
+					"item": [
+						{
+							"name": "DeleteWorkerOfCompany",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MTE2NTExMjQsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTYxMTY1MjAyNCwidXNlcklkIjoiOSJ9.7lsWC_vM2OXxHQaIAGq8GHCFbZErdbDkA4Fzp5xN-zw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"route\" : \"deleteUser\",\n    \"params\" : {\n        \"user_id\":6\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://dev.creativewebshq.com/worktime/api/main.php",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"creativewebshq",
+										"com"
+									],
+									"path": [
+										"worktime",
+										"api",
+										"main.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ListAllWorkers",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MTE2NTIzNzcsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTYxMTY1MzI3NywidXNlcklkIjoiOSJ9.4Oi-jaZMDBk5_sLnrrVJ1jIrbak7DxI8oVlBpW-BkFg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"route\" : \"listworkers\",\n    \"params\" : {\n        \"role_id\":3\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://dev.creativewebshq.com/worktime/api/main.php",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"creativewebshq",
+										"com"
+									],
+									"path": [
+										"worktime",
+										"api",
+										"main.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ListRecords",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MTE2OTYwNjAsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTYxMjMwMDg2MCwidXNlcklkIjoiOSJ9.AiAYCRk0SlqKmntP5n7Ti33T1-vYqP_1EWcyZdBGD6k",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"route\" : \"listRecords\",\n    \"params\" : {\n        \"user_id\":6,\n        \"per_page\":30,\n        \"page\":1\n        \n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://dev.creativewebshq.com/worktime/api/main.php",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"creativewebshq",
+										"com"
+									],
+									"path": [
+										"worktime",
+										"api",
+										"main.php"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetWorkerDetails",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MTE3MjkxNDgsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTYxMjMzMzk0OCwidXNlcklkIjoiOSJ9.ifLaWfjTeOvgUhWNhtxBD_ESxknAsZJ1kcFOZAo6ek4",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"route\" : \"getWorkerDetails\",\n    \"params\" : {\n        \"user_id\":6\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://dev.creativewebshq.com/worktime/api/main.php",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"creativewebshq",
+										"com"
+									],
+									"path": [
+										"worktime",
+										"api",
+										"main.php"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

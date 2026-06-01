@@ -1,0 +1,30 @@
+articles:
+https://towardsdatascience.com/guide-to-file-formats-for-machine-learning-columnar-training-inferencing-and-the-feature-store-2e0c3d18d4f9
+https://towardsdatascience.com/illustrated-10-cnn-architectures-95d78ace614d#e971
+
+model zoo:
+https://github.com/collections/ai-model-zoos
+https://github.com/Ayush-Shirsat/LeNet-5
+https://github.com/onnx/models/tree/master/vision/classification/alexnet
+https://github.com/onnx/models
+
+onnx:
+https://github.com/onnx/onnx
+https://github.com/onnx/onnx/blob/master/onnx/external_data_helper.py
+https://github.com/onnx/onnx/blob/master/docs/PythonAPIOverview.md
+https://www.programcreek.com/python/example/112083/onnx.numpy_helper.to_array
+http://onnx.ai/sklearn-onnx/auto_examples/plot_onnx_operators.html
+https://github.com/onnx/onnx/blob/59b9f908fc3698c15dc818653054f4885e402488/onnx/helper.py#L540
+http://onnx.ai/sklearn-onnx/api_summary.html
+
+netron:
+https://netron.app/
+
+How can we get values of weights from any layer of the model:
+https://github.com/onnx/onnx/issues/1425
+
+Raw data in Protobuf:
+https://github.com/onnx/onnx/issues/2825
+
+calculate the number of layers and operators a onnx model:
+https://github.com/onnx/onnx/issues/2511
