@@ -1,0 +1,161 @@
+[u'conv1_1'][name: "strides"
+ints: 4
+ints: 4
+type: INTS
+, name: "pads"
+ints: 0
+ints: 0
+ints: 0
+ints: 0
+type: INTS
+, name: "kernel_shape"
+ints: 11
+ints: 11
+type: INTS
+][u'conv1_2'][][u'norm1_1'][name: "size"
+i: 5
+type: INT
+, name: "alpha"
+f: 0.0001
+type: FLOAT
+, name: "beta"
+f: 0.75
+type: FLOAT
+, name: "bias"
+f: 1.0
+type: FLOAT
+][u'pool1_1'][name: "strides"
+ints: 2
+ints: 2
+type: INTS
+, name: "pads"
+ints: 0
+ints: 0
+ints: 0
+ints: 0
+type: INTS
+, name: "kernel_shape"
+ints: 3
+ints: 3
+type: INTS
+][u'conv2_1'][name: "group"
+i: 2
+type: INT
+, name: "strides"
+ints: 1
+ints: 1
+type: INTS
+, name: "pads"
+ints: 2
+ints: 2
+ints: 2
+ints: 2
+type: INTS
+, name: "kernel_shape"
+ints: 5
+ints: 5
+type: INTS
+][u'conv2_2'][][u'norm2_1'][name: "size"
+i: 5
+type: INT
+, name: "alpha"
+f: 0.0001
+type: FLOAT
+, name: "beta"
+f: 0.75
+type: FLOAT
+, name: "bias"
+f: 1.0
+type: FLOAT
+][u'pool2_1'][name: "strides"
+ints: 2
+ints: 2
+type: INTS
+, name: "pads"
+ints: 0
+ints: 0
+ints: 0
+ints: 0
+type: INTS
+, name: "kernel_shape"
+ints: 3
+ints: 3
+type: INTS
+][u'conv3_1'][name: "strides"
+ints: 1
+ints: 1
+type: INTS
+, name: "pads"
+ints: 1
+ints: 1
+ints: 1
+ints: 1
+type: INTS
+, name: "kernel_shape"
+ints: 3
+ints: 3
+type: INTS
+][u'conv3_2'][][u'conv4_1'][name: "group"
+i: 2
+type: INT
+, name: "strides"
+ints: 1
+ints: 1
+type: INTS
+, name: "pads"
+ints: 1
+ints: 1
+ints: 1
+ints: 1
+type: INTS
+, name: "kernel_shape"
+ints: 3
+ints: 3
+type: INTS
+][u'conv4_2'][][u'conv5_1'][name: "group"
+i: 2
+type: INT
+, name: "strides"
+ints: 1
+ints: 1
+type: INTS
+, name: "pads"
+ints: 1
+ints: 1
+ints: 1
+ints: 1
+type: INTS
+, name: "kernel_shape"
+ints: 3
+ints: 3
+type: INTS
+][u'conv5_2'][][u'pool5_1'][name: "strides"
+ints: 2
+ints: 2
+type: INTS
+, name: "pads"
+ints: 0
+ints: 0
+ints: 1
+ints: 1
+type: INTS
+, name: "kernel_shape"
+ints: 3
+ints: 3
+type: INTS
+][u'OC2_DUMMY_0'][][u'fc6_1'][name: "transB"
+i: 1
+type: INT
+][u'fc6_2'][][u'fc6_3', u'_fc6_mask_1'][name: "ratio"
+f: 0.5
+type: FLOAT
+][u'fc7_1'][name: "transB"
+i: 1
+type: INT
+][u'fc7_2'][][u'fc7_3', u'_fc7_mask_1'][name: "ratio"
+f: 0.5
+type: FLOAT
+][u'fc8_1'][name: "transB"
+i: 1
+type: INT
+][u'prob_1'][]
